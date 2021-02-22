@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<style>
+/* Set a style for all buttons */
+button {
+  background-color: #ADD8E6;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+</style>
+<title>Rewards</title>
+
+</head><body><button onclick="myFunction()">Access Your Rewards Points</button>
+
+<button onclick="myFunction2()">Ai-Tien</button>
+<button onclick="myFunction3()">Ky-An</button>
+<button onclick="myFunction4()">Tam-Nhi</button>
+<p id = "demo"><p>
+
+<script>
+
+var a = "0"
+var t = "0"
+var k = "0"
+function myFunction2() {
+++a
+}
+function myFunction3() {
+++k
+}
+function myFunction4() {
+++t
+}
+function myFunction() {
+  var text;
+  var password = prompt("Type In Your Name To Access Your Reward Points");
+  switch(password) {
+    case "aitien":
+       text = a;
+      break;
+    case "tamnhi":
+      text = t;
+      break;
+    case "kyan":
+      text = k;
+      break;
+    default:
+      text = "Wrong Password";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+
+
+</body></html>
